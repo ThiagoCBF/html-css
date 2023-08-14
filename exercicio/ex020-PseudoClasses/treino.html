@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformando Goku</title>
+    <script>
+        function trocarImagem(element) {
+  
+  if (element.src.includes('gokun.png')) {
+    element.src = 'gokuspn.png';
+  } else {
+    element.src = 'gokun.png';
+  }
+  element.parentElement.classList.toggle('clicked');
+}
+    </script>
+    
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .goku {
+            background-color: rgb(22, 121, 146);
+            
+        }
+
+        .imagem-container img {
+            width: 300px;
+            height: 450px;
+        }
+
+        .image-container.clicked img {  
+        opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagem-container">
+    <h1>Transformando Goku</h1>
+    <img src="gokun.png" onclick="trocarImagem(this)" alt="Goku Normal" class="goku">
+    </div>
+    
+</body>
+</html>

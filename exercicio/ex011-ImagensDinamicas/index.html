@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Imagens flexiveis!</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img_pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img_media.png" type="image/png">
+
+        <img src="imagens/img_grande.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5 </p>
+    <audio src="midia/Mess Call - USAF Heritage of America Band .mp3" controls autoplay loop></audio> 
+
+    <h2>Outro Jeito Audio</h2>
+    <audio preload="metadata" autoplay controls></audio>
+        <source src="midia/Mess Call - USAF Heritage of America Band .mp3" type="audio/mpag">
+        <source src="midia/Mess Call - USAF Heritage of America Band .ogg" type="audio/ogg">
+        <source src="midia/Mess Call - USAF Heritage of America Band .wav" type="audio/wav">
+        
+    </audio>
+    
+</body>
+</html>
